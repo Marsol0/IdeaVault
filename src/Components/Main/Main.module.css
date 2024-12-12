@@ -1,0 +1,13 @@
+.noteConteiner {
+    border: 2px solid black;
+    margin: 0 2rem;
+    min-height: 250px;
+}
+.noteList {
+    padding: 10px;
+    background-color: yellow;
+}
+.noteList h3{
+    
+    padding-bottom: 2rem;
+}
