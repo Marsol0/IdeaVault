@@ -17,8 +17,11 @@ const Form = (props) => {
        }))
     }
     const handleClick = (e) => {
-        props.addNote(note)
+        props.onAdd(note)
         e.preventDefault()
+        console.log(note)
+        
+        
         
     }
     return (

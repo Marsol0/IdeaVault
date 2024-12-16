@@ -2,12 +2,39 @@
     border: 2px solid black;
     margin: 0 2rem;
     min-height: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
-.noteList {
+.note {
     padding: 10px;
     background-color: yellow;
-}
-.noteList h3{
+    border-radius: 5px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 1rem 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    min-width: 200px;
     
+}
+button {
+    align-self: flex-end;
+}
+
+.note h3 {
     padding-bottom: 2rem;
+    margin: 0; 
+}
+
+.note p {
+    margin: 0; 
+    font-size: 1rem; 
+    text-decoration: underline ;
+    text-underline-offset: 3px;
+    
+}
+button {
+
 }

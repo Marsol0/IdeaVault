@@ -4,14 +4,25 @@ import Form from "../Form/Form"
 import styles from "./Main.module.css"
 const Main = () => {
     const [allNotes, setAllNotes] = useState([])
+
+    const addNote = (newNote) => {
+        setAllNotes((prevValue) => {
+            return [...prevValue, newNote]
+        })
+    }
     return (
         <>
-        <Form />
+        <Form onAdd={addNote}/>
         <div className={styles.noteConteiner}>
-            <div className={styles.noteList}>
-                <h3>asd</h3>
-                <p>asdasdasdasdad</p>
-            </div>
+           {allNotes.map((note, index) => {
+            return (
+                <div key={index} className={styles.note}>
+                    <h3>{note.title}</h3> 
+                    <p>{note.content}</p>
+                    <button>Delete</button>
+                </div>
+            )
+           })}
            
         </div>
         </>
