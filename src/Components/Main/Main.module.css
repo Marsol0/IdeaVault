@@ -9,7 +9,7 @@
 }
 .note {
     padding: 10px;
-    background-color:  #78B3CE;
+    background-color:  #C9E6F0;
     border-radius: 5px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     margin: 1rem 0; 
@@ -43,4 +43,9 @@ button {
 }
 button {
 
+}
+.error {
+    display: flex;
+    justify-content: center;
+    color: red;
 }
