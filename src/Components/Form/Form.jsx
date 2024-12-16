@@ -18,8 +18,12 @@ const Form = (props) => {
     }
     const handleClick = (e) => {
         props.onAdd(note)
+        setNote({
+            title: "",
+            content: ""
+        })
         e.preventDefault()
-        console.log(note)
+        
         
         
         

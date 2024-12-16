@@ -1,26 +1,31 @@
 .noteConteiner {
-    border: 2px solid black;
-    margin: 0 2rem;
+    background-color: azure;
+    padding: 0 1rem;
     min-height: 250px;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .note {
     padding: 10px;
-    background-color: yellow;
+    background-color:  #78B3CE;
     border-radius: 5px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     margin: 1rem 0; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 200px;
     max-width: 250px;
     min-width: 200px;
+    overflow-wrap: break-word;
+    overflow: scroll;
+    
     
 }
 button {
-    align-self: flex-end;
+    margin-top: auto;
+    
 }
 
 .note h3 {
@@ -33,6 +38,7 @@ button {
     font-size: 1rem; 
     text-decoration: underline ;
     text-underline-offset: 3px;
+    margin-bottom: 12px;
     
 }
 button {
